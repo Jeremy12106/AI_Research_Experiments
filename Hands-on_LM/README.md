@@ -40,7 +40,7 @@
 2. 將你的文本數據儲存在 `assets/data.txt` 中。
 
 3. 執行主程式：
-    ```bash
+    ```
     python script.py
     ```
 

@@ -17,5 +17,7 @@
 1. 克隆此儲存庫。
 2. 確保 assets/ 資料夾中有必要的 .npy 權重和輸入數據文件。
 3. 執行 CNN - Homemade steelmaking.py 腳本：  
-    `python CNN.py`
+    ```
+    python CNN.py
+    ```
 4. 腳本將顯示每層的誤差計算結果與總運行時間。

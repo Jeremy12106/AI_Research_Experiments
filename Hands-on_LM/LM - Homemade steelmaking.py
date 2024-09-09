@@ -10,12 +10,12 @@ import os
 
 path = 'assets/data.txt'
 f = open(path, 'r',encoding="utf-8")
-input=f.read()
-a=input.split()
+input_txt=f.read()
+a=input_txt.split()
 f.close()
 words_list=[]
 
-wordsSp = jieba.cut(input)
+wordsSp = jieba.cut(input_txt)
 
 for word in wordsSp:
     if (word !='\n')&(word!='')&(word!=' ')&(word!='※'):
@@ -56,14 +56,17 @@ for i in range(len(words_list)-2):
     #-----------------------------------------------------------------------  
     
 
+
+
 ## two words
       
-start='我'
+start=str(input("輸入一個開頭字元: "))
 ans=start
 ptr=start
 
 stop='。'
-stopCount=3
+stopCount=int(input("輸入文章段落數(句號): "))
+print("生成文章中")
 
 for i in range(100000):#   Generate 100000 !
     

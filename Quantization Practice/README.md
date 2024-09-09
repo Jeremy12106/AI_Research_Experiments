@@ -14,11 +14,13 @@
 ![Before Quantization](results/Before_Quantization.png)
 
 #### Linear Quantization
-Error: 0.01702
+Error: 0.01702  
+
 ![Linear Quantization](results/Linear_Quantization.png)
 
 #### Kmeans Quantization 
-Error: 0.00470
+Error: 0.00470  
+
 ![Kmeans Quantization](results/Kmeans_Quantization.png)
 
 #### 使用 Linear Quantization 映射到不同位元數的損失結果

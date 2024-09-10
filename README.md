@@ -33,11 +33,11 @@ Practical exercises and implementations of Convolutional Neural Networks.
 **Backpropagation Practice:**  
 In-depth practice of the backpropagation algorithm used for training neural networks.  
 
-**Hands-on LM:** 
+**Hands-on LM:**  
  Hands-on projects involving Language Models and their applications.  
 
-**Image feature extraction:** 
+**Image feature extraction:**  
 Feature extraction using Principal Component Analysis (PCA). 
 
-**Hands-on GANs:** 
+**Hands-on GANs:**  
  Practical exercises and implementations of Generative Adversarial Networks.

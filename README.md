@@ -14,8 +14,8 @@
 **手刻語言模型 (LM)：**  
 涉及建立語言模型及其應用的實作專案。
 
-**圖像降維：**  
-降低圖像數據維度的方法和實驗，以改進處理和分析。
+**影像特徵提取：**  
+利用主成分分析 (PCA) 技術提取影像的主要特徵。PCA用於降維和可視化，幫助理解和分析影像數據中的重要結構和模式。
 
 **手刻生成對抗網路 (GANs)：**  
 生成對抗網路的手刻練習和實現。
@@ -36,8 +36,8 @@ In-depth practice of the backpropagation algorithm used for training neural netw
 **Hands-on LM:** 
  Hands-on projects involving Language Models and their applications.  
 
-**Image Dimensionality Reduction:** 
- Methods and experiments on reducing dimensionality of image data for improved processing and analysis.  
+**Image feature extraction:** 
+Feature extraction using Principal Component Analysis (PCA). PCA is used for dimensionality reduction and visualization, helping to understand and analyze key structures and patterns in image data.
 
 **Hands-on GANs:** 
  Practical exercises and implementations of Generative Adversarial Networks.

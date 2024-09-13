@@ -120,7 +120,7 @@ if __name__ == '__main__':
     image_size = 128
     image_channels = 3
     batch_size = 64
-    epochs = 100
+    epochs = 101
     learning_rate = 0.0002
     beta1 = 0.5
 

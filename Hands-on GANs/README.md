@@ -11,8 +11,8 @@
 - 注意事項
 
 ### 簡介
-此程式實現了一個生成對抗網絡 (GANs)，該模型由一個生成器和一個判別器組成，並且使用 PyTorch 進行模型訓練。程式的目的是生成與輸入類別標籤相對應的圖像。具體來說，您可以通過該 GAN 模型，根據給定的隨機噪聲和類別標籤，生成類似於資料集中相應類別的圖片。
-範例程式使用 Kaggle 網站上的 [Pokemon Generation One](https://www.kaggle.com/datasets/thedagger/pokemon-generation-one) 資料集
+此程式實現了一個生成對抗網絡 (GANs)，該模型由一個生成器和一個判別器組成，並且使用 PyTorch 進行模型訓練。程式的目的是生成與輸入類別標籤相對應的圖像。具體來說，您可以通過該 GAN 模型，根據給定的隨機噪聲和類別標籤，生成類似於資料集中相應類別的圖片。  
+範例程式使用 Kaggle 網站上的 [Pokemon Generation One](https://www.kaggle.com/datasets/thedagger/pokemon-generation-one) 資料集。
 
 
 ### 環境需求
@@ -64,7 +64,17 @@ python GANs.py
 - `beta1`: Adam 優化器的 beta1 參數（預設：0.5）
 
 ### 結果展示
-在每次訓練時，程式會每 10 個 epoch 保存一次生成圖像的結果並顯示。您可以在終端中查看生成器和判別器的損失值，以及繪製的損失曲線圖。
+在每次訓練時，程式會每 10 個 epoch 保存一次生成圖像的結果並顯示。您可以在終端中查看生成器和判別器的損失值，以及繪製的損失曲線圖。  
+**Epoch = 0**  
+![epoch_0](results/epoch_0.png)  
+**Epoch = 10**  
+![epoch_10](results/epoch_10.png)  
+**Epoch = 30**  
+![epoch_30](results/epoch_30.png)  
+**Epoch = 50**  
+![epoch_50](results/epoch_50.png)  
+**訓練損失曲線圖**  
+![訓練損失曲線圖](results/gans_training_loss.png)  
 
 ### 注意事項
 1. 數據集格式：圖像需為 .jpg 格式，如果使用其他格式，請修改程式中讀取檔案的部分。

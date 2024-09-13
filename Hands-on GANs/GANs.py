@@ -119,8 +119,8 @@ if __name__ == '__main__':
     latent_dim = 128
     image_size = 128
     image_channels = 3
-    batch_size = 32
-    epochs = 52
+    batch_size = 64
+    epochs = 100
     learning_rate = 0.0002
     beta1 = 0.5
 

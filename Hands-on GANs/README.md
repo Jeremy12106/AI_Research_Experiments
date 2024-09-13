@@ -30,9 +30,9 @@ pip install torch torchvision matplotlib pillow
 若使用 GPU 訓練，請安裝對應版本的 CUDA，並確保 PyTorch 正常配置 GPU。
 
 ### 資料集準備
-資料集應放在 `assets/pokemon` 目錄下。每個子資料夾代表一個類別，並包含該類別的圖片，圖片格式必須為 `.jpg`。例如：
+資料集應放在 `assets/datasets` 目錄下。每個子資料夾代表一個類別，並包含該類別的圖片，圖片格式必須為 `.jpg`。例如：
 ```
-assets/pokemon/
+assets/datasets/
   ├── class_1/
   │    ├── image_1.jpg
   │    ├── image_2.jpg

@@ -65,16 +65,16 @@ python GANs.py
 
 ### 結果展示
 在每次訓練時，程式會每 10 個 epoch 保存一次生成圖像的結果並顯示。您可以在終端中查看生成器和判別器的損失值，以及繪製的損失曲線圖。  
-**Epoch = 0**  
-![epoch_0](results/epoch_0.png)  
-**Epoch = 10**  
-![epoch_10](results/epoch_10.png)  
 **Epoch = 30**  
-![epoch_30](results/epoch_30.png)  
+![epoch_0](results/epoch_30.png)  
 **Epoch = 50**  
-![epoch_50](results/epoch_50.png)  
+![epoch_10](results/epoch_50.png)  
+**Epoch = 80**  
+![epoch_30](results/epoch_80.png)  
+**Epoch = 100**  
+![epoch_50](results/epoch_100.png)  
 **訓練損失曲線圖**  
-![訓練損失曲線圖](results/gans_training_loss_demo.png)  
+![訓練損失曲線圖](results/gans_training_loss.png)  
 
 ### 注意事項
 1. 數據集格式：圖像需為 .jpg 或 .png 格式，如果使用其他格式，可能會發生讀取資料上的錯誤。

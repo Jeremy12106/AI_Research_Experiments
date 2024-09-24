@@ -45,7 +45,7 @@ L1out=np.array(L1out)
 
 #------------------------  End Code   -----------------------------------------
 
- 
+
 L1out=np.array(L1out)
 print('\nError in the First Layer:')
 print(np.sum(np.abs(ans0-L1out)))
@@ -54,6 +54,26 @@ L2out=np.transpose(L1out,[1,2,0]).reshape([-1])
 print('\nError in the Second Layer:')
 print(np.sum(np.abs(ans2-L2out)))
 
+#########################  pooling   Code  ########################################
+
+# 假設每個 feature map 是 2D，進行 2x2 最大池化
+# pooled_L1out = []
+# for feature_map in L1out:
+#     pooled_map = []
+#     h, w = feature_map.shape
+#     for i in range(0, h, 2):
+#         row = []
+#         for j in range(0, w, 2):
+#             row.append(np.max(feature_map[i:i+2, j:j+2]))
+#         pooled_map.append(row)
+#     pooled_L1out.append(pooled_map)
+
+# pooled_L1out = np.array(pooled_L1out)
+
+# 更新 L2out 的輸出來自於池化後的 L1out
+# L1out = pooled_L1out
+
+#------------------------  End Code   -----------------------------------------
 
 #########################  FC1   Code  ########################################
 

@@ -26,7 +26,8 @@ term4Ans=np.load('assets/term4Ans.npy')
 
 
 # 定義KMeans的量化範數
-cluster_range = range(4, 13)
+cluster_range = range(10, 50, 5)
+
 
 # 儲存量化誤差的列表
 kmeans_quantization_errors = []
@@ -87,6 +88,23 @@ for n_clusters in cluster_range:
 
     L1outNorm_kmeans = ((L1out_kmeans - min_val) / (max_val - min_val) * 255)
     ansNorm_kmeans = ((ans0 - min_val) / (max_val - min_val) * 255)
+
+     # 顯示每次量化後的結果
+    # plt.figure(figsize=(10, 5))
+
+    # 顯示L1outNorm_kmeans
+    # plt.subplot(1, 2, 1)
+    # plt.imshow(L1outNorm_kmeans[0], cmap='gray')
+    # plt.title(f'L1out - {n_clusters} clusters (KMeans)')
+    # plt.colorbar()
+
+    # 顯示ansNorm_kmeans
+    # plt.subplot(1, 2, 2)
+    # plt.imshow(ansNorm_kmeans[0], cmap='gray')
+    # plt.title(f'ansNorm - {n_clusters} clusters (KMeans)')
+    # plt.colorbar()
+
+    # plt.show()
 
     # 計算KMeans的量化誤差
     kmeans_loss = np.mean(np.abs(L1outNorm_kmeans - ansNorm_kmeans))
